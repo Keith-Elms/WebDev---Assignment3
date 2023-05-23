@@ -1,0 +1,218 @@
+/*Remove default margins around all content in the html by setting margin to zero for all elements.*/
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*center the body content on the page*/
+.non_header_content {
+    /* background-color: lightgray; */
+    max-width: 1200px;
+    margin-bottom: 40px;
+    margin: 0px, auto, 0px, auto;
+    /*not working? doesn't center this block element*/
+}
+
+/*index2.php*/
+#admin_person_table {
+    margin-left: 10px;
+}
+
+/*new-account.php and lost-password.php*/
+#admin_email_table {
+    margin-left: 10px;
+}
+
+.it_support_login {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/*added May20-23*/
+.contains_hyperlinks a {
+    padding-left: 10px;
+}
+
+/*add a left margin and space below to the following body elements*/
+h1,
+h2,
+h3,
+p {
+    /* margin-left: 20px; */
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+/*override previous h3 margin-bottom*/
+h3 {
+    margin-bottom: 0px;
+}
+
+/*style for html links (anchors) May 20/23*/
+/* a{
+    color: white;
+    text-decoration: none;
+} */
+
+/*style for the main blue header bar in the header bar*/
+.header_bar {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(63, 63, 206);
+    /* box-shadow parameters: offset-x | offset-y | blur-radius | color */
+    box-shadow: 0px 20px 20px black;
+    display: flex;
+    /*added property to allow the three header elements to display horizontally*/
+}
+
+/*style for the bar containing the Lou out hyperlink on many pages in assignment 2*/
+.logout_bar {
+    margin-top: 30px;
+    /*margin-left: 10px;*/
+    margin-bottom: 10px;
+}
+
+/*style for the main blue footer bar in assignment 2*/
+.footer_bar {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(63, 63, 206);
+    /* box-shadow parameters: offset-x | offset-y | blur-radius | color */
+    /*box-shadow: 0px 20px 20px black;*/
+    display: flex;
+    /*added property to allow the three header elements to display horizontally*/
+}
+
+/*header bar text*/
+#header_text {
+    margin-top: 20px;
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+/*footer bar text*/
+#footer_text {
+    margin-top: 10px;
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+/*style for the two crossed canoe paddles logo in the header bar*/
+#image_logo {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    float: right;
+
+}
+
+/*style for the hamburger menu button in the header bar*/
+.header_button {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+}
+
+/*style for side nav menu*/
+.header_nav {
+    width: 30vw;
+    height: 100vh;
+    margin-top: 80px;
+    /*place menu directly below header bar*/
+    background-color: rgb(63, 63, 206);
+    position: fixed;
+    left: -30vw;
+    transition: 0.5s;
+}
+
+/*attribute change to unhide the nav menu when the hamburger button is clicked*/
+.header_nav.active {
+    left: 0vw;
+}
+
+/*.header_nav_menu{
+    list-style-type: none;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15pt;
+    padding-top: 20px;
+}*/
+
+/*style for each list item*/
+li {
+    list-style-type: none;
+    color: white;
+    /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
+    font-size: 15pt;
+    padding-top: 20px;
+}
+
+/*style for html links (anchors)* in list*/
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+#image_main {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: -1;
+    /*set the image to appear under the shadow of the header image*/
+}
+
+/*style for h1 tags in non-header part of body - disabled this for assignment 3 - May 21-23*/
+/*puts grey line underneath*/
+/* .non_header_content h1 {
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 3px; 
+} */
+
+
+/*style for trip info entry table*/
+.trip_entry_table {
+    padding-left: 10px;
+}
+
+/*style for fields on new trip info entry table*/
+.trip_entry_table th {
+    vertical-align: top;
+    text-align: left;
+}
+
+/*admin-add.php*/
+.trip_desc_box {
+    resize: none;
+    width: 400px;
+    height: 100px;
+
+    /*    rows: 5;
+   cols: 50; */
+}
+
+/*set margin around horizontal line (section divider)*/
+hr {
+    margin: 10px;
+}
+
+/*style for html links (anchors) in h2's*/
+h2 a {
+    color: green;
+    /*set the color of the anchor text to green*/
+}
+
+/*handle changes in screen width*/
+@media only screen and (max-width: 600px) {
+    body {
+        /*reduce all font sizes to 0.75% when screen width is less that 600px*/
+        font-size: .75em;
+    }
+}
