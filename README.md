@@ -15,4 +15,4 @@ I used a light grey background for most pages but could not on the pages that ha
 If the admin-confirm.php is refreshed or returned to by clicking back on the all-adventures.php page, the most recent adventure that was added will be added again. I attempted to fix this problem by adding code to admin-confirm.php. The plan was to query the DB for any records that matched the new details to be added (session variables from the admin-add.php page) and only add the new adventure if the select query returned no rows. It was a good plan but I didn't manage to get it to work. I left the code there but commented it out.
 
 Thanks,
-Keith
+Keith Elms
